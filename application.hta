@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="application">
+<head>
+    <title>Application Title</title>
+    <hta:application 
+    ID="application"
+    APPLICATIONNAME="application" 
+    SYSMENU="yes"
+    SCROLL="yes"
+	CAPTION="yes"
+    border="normal"
+    borderStyle="normal" 
+    contextMenu="yes" 
+    maximizeButton="yes" 
+    minimizeButton="yes" 
+    navigable="true" 
+    showInTaskbar="yes" 
+    singleInstance="no"  />
+    <meta http-equiv="x-ua-compatible" content="ie=9">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./app/lib/css/bootstrap.css" media="screen" />
+    <link rel="stylesheet" href="./app/lib/css/bootswatch.min.css" />
+    <link rel="stylesheet" href="./app/lib/css/font-awesome.css" />
+    <link rel="stylesheet" href="./app/lib/css/application.css" />
+</head>
+
+
+<body>
+   <!--Main Angular Application Controller-->
+    <div class="application-App hide" ng-controller="applicationCtrl">
+        
+    </div>
+    <!--/application-App-->
+    <script src="./app/lib/js/jquery-1.10.2.min.js"></script>
+    <script src="./app/lib/js/angular.js"></script>
+    <script src="./app/lib/js/bootstrap.min.js"></script>
+	<script src="./app/lib/js/jquery.jsconsole.js"></script>
+	<script type="text/javascript">
+        jsConsole.init();
+        jsConsole.toggle();
+    </script>
+	<!--application-->
+	<script src="./app/lib/js/applicationApp.js"></script>
+	<script src="./app/lib/js/applicationControllers.js"></script>
+	<script src="./app/lib/js/applicationServices.js"></script>
+    <script src="./app/lib/js/applicationDirectives.js"></script>
+</body>
+
+</html>
+
